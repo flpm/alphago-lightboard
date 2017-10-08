@@ -1,0 +1,7 @@
+.cursor {
+	opacity: 0.2;
+	r: 2.7;
+	fill: none;
+	stroke: black;
+	stroke-width: 0.4;
+}

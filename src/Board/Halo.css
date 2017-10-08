@@ -1,0 +1,25 @@
+@keyframes halo_animation {
+    0% {r: 3px;}
+    50% {r: 4px;}
+    100% {r: 3px;}
+}
+
+.halo {
+	r: 4px;
+	fill-opacity: 0.8;
+}
+
+.halo_animation {
+	animation-name: halo_animation;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.blue_halo {
+	fill: #008AFC;
+}
+
+.red_halo {
+	fill: #C90000;
+}

@@ -1,0 +1,148 @@
+/* Basic styles */
+
+.stone circle {
+	r: 2.3;
+}
+
+.black_stone {
+	fill: black;
+}
+
+.white_stone {
+	fill: white;
+}
+
+.cursor {
+	opacity: 0.2;
+}
+
+.protect {
+	r: 2.5;
+	opacity: 0.1;
+	fill: gray;
+}
+
+
+/* Stone Labels */
+
+.stone_label {
+	font-family: 'News Cycle', sans-serif;
+	font-size: 2.2px;
+	font-weight: bold;
+
+	text-anchor: middle;
+	alignment-baseline: middle;
+	stroke-width: 0px;
+}
+
+/* Standard Stone Labels */
+
+.black_stone .stone_label {
+	fill: white;
+}
+
+.white_stone .stone_label {
+	fill: black;
+}
+
+
+/* Variants */
+
+.variant_black_stone {
+	fill: #E3B97F;
+	stroke: #333;
+	stroke-width: 0.3px;
+	fill-opacity: 0.8;
+	stroke-opacity: 0.9;
+}
+
+.variant_white_stone {
+	fill: #E3B97F;
+	stroke: #eee;
+	stroke-width: 0.3px;
+	fill-opacity: 0.7;
+	stroke-opacity: 0.9;
+}
+
+.variant_black_stone .stone_label {
+	fill: #000;
+	fill-opacity: 1;
+	font-size: 2.3px;
+}
+
+/* white variant */ 
+.variant_white_stone .stone_label {
+	fill: #FFF;
+	fill-opacity: 1;
+	font-size: 2.3px;
+}
+
+
+/* PALETTE
+colors    stroke   text
+green     #7AA135  #4C710A
+purple    #815898  #5A2A74
+blue      #567793  #2A5070
+/*
+
+
+
+
+
+/* Stone appearing */
+@keyframes appear {
+    from {r: 0;}
+    to {r: 2.3;}
+}
+
+@keyframes appear_label {
+    from {opacity: 0;}
+    to {opacity: 0.7;}
+}
+
+.variant_white_stone circle {
+	animation-name: appear;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+}
+
+.variant_white_stone text {
+	animation-name: appear_label;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+}
+
+.variant_black_stone circle {
+	animation-name: appear;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+}
+
+.variant_black_stone text {
+	animation-name: appear_label;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+}
+
+
+/* Border colorts */
+
+.blue_border {
+	stroke: #33A1FD;
+	stroke-width: 0.4px;
+}
+
+
+/* Alternative fills */
+
+.black_stone_blue {
+	fill: #008AFC;
+	stroke: black;
+	stroke-width: 0.3px;
+}
+
+.white_stone_blue {
+	fill: #C4E3FC;
+	stroke: white;
+	stroke-width: 0.3px;
+}

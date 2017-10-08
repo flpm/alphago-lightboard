@@ -1,0 +1,12 @@
+.debug_box {
+	margin: 10px auto;
+	width: 200px;
+	padding: 10px;
+	border: 1px dashed grey;
+}
+
+.debug {
+	font-family: 'News Cycle', sans-serif;
+	font-size: 12px;
+	color: red;
+}
