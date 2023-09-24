@@ -8,5 +8,3 @@ To run the test app locally on your computer, install git, Node.js and npm and t
 1. Clone the repository (or download the code)
 2. run `npm install` inside the folder
 3. run `npm start` to run a local version and open it a browser window (or browse to http://localhost:3000/)
-
-You can see a version of this code running here: http://alphago.goban.cloud
